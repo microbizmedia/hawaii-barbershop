@@ -8,7 +8,8 @@ export default {
   ],
   theme: {
     extend: {
-      colors: {
+      colors: { 
+          'priceColor': '#91765a',
         background: "var(--background)",
         foreground: "var(--foreground)",
       },

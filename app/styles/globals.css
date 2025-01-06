@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: rgba(255, 255, 255, 0.9);
+  background-color: #f5eee7; /* Your desired background color */
+  font-family: Arial, Helvetica, sans-serif;
+}
+.global-container{
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1024px;
+  padding-left: 0.6rem;
+  padding-right: 0.6rem;
+}
+h1{
+  font-size: 4rem;
+  line-height: 4.5rem;
+  font-weight: bold;
+}
+h2{
+  font-size: 2.7rem;
+  font-weight: bold;
+  /* line-height: 4.5rem; */
+}
+p{
+  
+  line-height: 1.8rem;
+}
+.bg-dotted {
+  border-bottom: 2px dotted rgba(0, 0, 0, 0.2);
+  
+}
+.bg-dotted-footer {
+  border-bottom: 2px dotted #91765a;
+  
+}
+
+
+
