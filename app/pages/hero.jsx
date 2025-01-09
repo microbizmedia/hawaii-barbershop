@@ -4,8 +4,9 @@ const Hero = () => {
     return (
         <div
             id="hero"
-            className='relative min-h-screen w-full bg-[url("/images/Hero_01.jpg")] bg-cover bg-center'
-        >
+            className='relative min-h-screen w-full bg-cover bg-center'
+            style={{ backgroundImage: "url('./images/Hero_01.jpg')" }} >
+        
             {/* Gradient Overlay */}
             <div className="absolute inset-0 bg-gradient-radial from-transparent via-black/70 to-black" />
             <div className="global-container absolute inset-0 flex justify-start items-center">
