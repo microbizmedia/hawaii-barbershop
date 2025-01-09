@@ -4,7 +4,7 @@ const Hero = () => {
     return (
         <div
             id="hero"
-            className='relative min-h-screen w-full bg-[url("/images/Hero_01.jpg")] bg-cover bg-center'
+            className='relative min-h-screen w-full bg-[url("./images/Hero_01.jpg")] bg-cover bg-center'
         >
             {/* Gradient Overlay */}
             <div className="absolute inset-0 bg-gradient-radial from-transparent via-black/70 to-black" />
