@@ -3,7 +3,7 @@ const Hero = () => {
 
     return (
         <div
-            id="hero"
+            id="hero-image"
             className='relative min-h-screen w-full bg-cover bg-center'
             style={{ backgroundImage: "url('./images/Hero_01.jpg')" }} >
         
