@@ -1,7 +1,7 @@
 import Header from "./components/header";
 import Outlet from "./components/outlet";
 import Footer from "./components/footer";
-import ScrollToTop from "./components/scrollButton";
+// import ScrollToTop from "./components/scrollButton";
 export default function Home() {
   return (
     <div className="">

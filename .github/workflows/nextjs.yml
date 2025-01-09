@@ -1,0 +1,34 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main  # Deploy when pushing to the 'main' branch
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2  # Checkout the code from the repository
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '16'  # Set the Node.js version you are using
+
+      - name: Install dependencies
+        run: npm install  # Install dependencies
+
+      - name: Build the Next.js app
+        run: npm run build  # Run the build script
+
+      - name: Export static site
+        run: npm run export  # Run the export script to generate static files
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3  # GitHub Pages deployment action
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}  # GitHub token to authenticate
+          publish_dir: ./out  # Directory to deploy (the 'out' folder from `next export`)
