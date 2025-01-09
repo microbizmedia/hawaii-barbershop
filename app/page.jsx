@@ -4,7 +4,7 @@ import Footer from "./components/footer";
 // import ScrollToTop from "./components/scrollButton";
 export default function Home() {
   return (
-    <div className="">
+    <main>
       
       {/*...::: Header Start :::... */}
       <Header />
@@ -18,6 +18,6 @@ export default function Home() {
       <Footer/>
       {/*...::: Footer End :::... */}
       {/* <ScrollToTop /> */}
-    </div>
+    </main>
   );
 }

@@ -18,13 +18,13 @@ const About = () => {
             </p>
             </div>
             <img 
-            src='/images/Segment_01_1.1.jpg' 
+            src='./images/Segment_01_1.1.jpg' 
             alt="Barber cutting hair"
             height={350}
             width={300}
              />
               <img className='absolute top-[-100px] right-[-80px]'
-            src='/images/Segment_01_1.2.jpg' 
+            src='./images/Segment_01_1.2.jpg' 
             alt="Barber cutting hair"
             height={400}
             width={300}
