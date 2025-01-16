@@ -11,7 +11,7 @@ const Footer = () => {
   ];
  
   return (
-    <footer className="relative  m-auto w-full bg-[#000]">
+    <footer className="relative  m-auto w-full bg-[#000] overflow-hidden">
       <div className="global-container flex justify-between py-20">
       <div>
         <h3 className="text-2xl  pb-2">Hawaii Barbershop</h3>

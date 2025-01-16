@@ -4,7 +4,7 @@ const Directions = () => {
     return (
         <div
             id="directions"
-            className='relative  m-auto w-full bg-[#000]'
+            className='relative  m-auto w-full bg-[#000] overflow-hidden'
         >
             <div className="global-container m-auto flex justify-between items-center   py-20">
                 <div>
