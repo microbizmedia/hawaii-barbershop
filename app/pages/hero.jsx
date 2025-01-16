@@ -5,7 +5,7 @@ const Hero = () => {
         <div
             id="hero-image"
             className='relative min-h-screen w-full bg-cover bg-center'
-            style={{ backgroundImage: "url('./images/Hero_01.jpg')" }} >
+            style={{ backgroundImage: "url('./images/Hero_02.png')" }} >
         
             {/* Gradient Overlay */}
             <div className="absolute inset-0 bg-gradient-radial from-transparent via-black/70 to-black" />

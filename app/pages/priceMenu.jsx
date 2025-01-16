@@ -2,12 +2,14 @@
 const PriceMenu = () => {
    
         const services = [
-          { name: "Haarschnitt", price: "€33" },
-          { name: "Kinder im Alter von 3 bis 9 Jahren", price: "€14" },
-          { name: "Bartschneiden", price: "€13" },
-          { name: "Kinder im Alter von 10 bis 13 Jahren", price: "€17" },
-          { name: "Haar - und Bartschneiden", price: "€39" },
-          { name: "Haarwäsche", price: "€20" },
+          { name: "Haarschnitt", price: "23€" },
+          { name: "Kinderschnitt", price: "15€" },
+          { name: "Haarschnitt mit Übergang", price: "25€" },
+          { name: "Augenbrauen", price: "10€" },
+          { name: "Haar- u. Bartschnitt", price: "38€" },
+          { name: "Heißwachs", price: "10€" },
+          { name: "Bartschnitt", price: "15€" },
+          { name: "Haarwäsche", price: "5€" },
         ];
     return (
      <div id="price-menu"

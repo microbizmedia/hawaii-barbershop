@@ -4,7 +4,7 @@ const Reviews = () => {
     return (
         <div
             id="video"
-            className='global-container relative  m-auto w-full '
+            className='global-container relative overflow-hidden m-auto w-full '
         >
             <div className="flex justify-between">
             <img className="mt-24"
