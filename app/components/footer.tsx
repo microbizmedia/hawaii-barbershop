@@ -11,7 +11,8 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="relative  m-auto w-full bg-[#000] overflow-hidden">
+    <footer className="relative  m-auto w-full bg-[#000] overflow-hidden"
+    id="footer">
       <div className="global-container flex lg:justify-between flex-wrap gap-8 py-10 lg:py-20">
         <div >
           <h3 className="text-2xl  pb-2">Hawaii Barbershop</h3>
