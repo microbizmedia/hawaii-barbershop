@@ -45,10 +45,10 @@ const Header = () => {
 
                 >
                     <ul className="site-menu-main">
-                        <Link href="/" ><li>Startseit</li></Link>
-                        <Link href="#about" ><li>­Über uns</li></Link>
-                        <Link href="#price-menu    " ><li>Preise</li></Link>
-                        <Link href="#footer" ><li>Kontakt</li></Link>
+                        <Link onClick={handleMenu} href="/" ><li>Startseit</li></Link>
+                        <Link  onClick={handleMenu} href="#about" ><li>­Über uns</li></Link>
+                        <Link onClick={handleMenu} href="#price-menu    " ><li>Preise</li></Link>
+                        <Link onClick={handleMenu} href="#footer" ><li>Kontakt</li></Link>
                         <li>
                             <div className={`mobile-menu-head ${mobileSubMenu && 'active'}`}>
                                 <div onClick={handleMenu} className='mobile-menu-close rotate-[-90deg]'>
