@@ -1,6 +1,6 @@
 "use client"
 import { useState, useEffect } from "react";
-
+import Link from "next/link";
 
 const Header = () => {
     const [mobileMenu, setMobileMenu] = useState(false);
@@ -34,7 +34,7 @@ const Header = () => {
             id='menu'
         >
             <div className="relative global-container flex justify-between items-center w-full ">
-                <a href="/" ><p  id="logo" className="text-xl">HAWAII BARBER KEMPTEN</p></a>
+                <Link href="/" ><p  id="logo" className="text-xl">HAWAII BARBER KEMPTEN</p></Link>
                 <div
                     onClick={handleMenu}
                     className={`menu-overlay ${mobileMenu && 'active'}`}
@@ -44,10 +44,10 @@ const Header = () => {
 
                 >
                     <ul className="site-menu-main">
-                        <a href="/" ><li>Startseit</li></a>
-                        <a href="#about" ><li>­Über uns</li></a>
-                        <a href="#price-menu    " ><li>Preise</li></a>
-                        <a href="#footer" ><li>Kontakt</li></a>
+                        <Link href="/" ><li>Startseit</li></Link>
+                        <Link href="#about" ><li>­Über uns</li></Link>
+                        <Link href="#price-menu    " ><li>Preise</li></Link>
+                        <Link href="#footer" ><li>Kontakt</li></Link>
                         <li>
                             <div className={`mobile-menu-head ${mobileSubMenu && 'active'}`}>
                                 <div onClick={handleMenu} className='mobile-menu-close rotate-[-90deg]'>
