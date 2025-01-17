@@ -14,7 +14,7 @@
   @media (width < 992px) {
     .site-menu-main {
       flex-direction: column;
-      width: 100%;
+      /* width: 100%; */
       padding-top: 50px;
       padding-bottom: 20px;
       row-gap:30px;
@@ -65,17 +65,10 @@
     }
   
   
-  
-  
-  
-  
-   
-  
     .menu-block {
       position: fixed;
       display: flex;
       flex-direction: column;
-  
       width: 100%;
       border-radius: 0 0 15px 15px;
       background-color: #0c1015;
@@ -92,14 +85,9 @@
       transform: translateY(0%);
       border-radius: 0px 0px 40px 40px;
     }
-  
-  
 
-  
-  
     .menu-block .mobile-menu-head {
       display: flex;
-      height: 65px;
       align-items: center;
       justify-content: center;
   
@@ -146,15 +134,8 @@
       cursor: pointer;
       line-height: 50px;
       text-align: center;
-      /* color: #ffffff; */
       font-size: 30px;
     }
-  
-    
-  
-  
-  
-  
   
     .menu-overlay {
       position: fixed;

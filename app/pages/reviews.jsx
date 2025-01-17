@@ -4,17 +4,17 @@ const Reviews = () => {
     return (
         <div
             id="video"
-            className='global-container relative overflow-hidden m-auto w-full '
+            className=' relative overflow-hidden m-auto w-full '
         >
-            <div className="flex justify-between">
-            <img className="mt-24"
+            <div className=" flex  flex-col-reverse lg:flex-row justify-center lg:gap-14">
+            <img className="  lg:mt-24 w-full md:max-w-[480px] m-auto lg:m-0"
                 src='./images/Segment_05.png'
                 alt="google-reviews"
 
                 width={450}
             />
-            <video width='480'  autoPlay muted loop playsInline
-                className='   object-cover object-center   '
+            <video  autoPlay muted loop playsInline
+                className=' w-full md:max-w-[480px]  object-cover object-center  m-auto lg:m-0'
             >
                 <source src='./images/Segment_5_1.2.mp4' type="video/mp4">
                 </source>

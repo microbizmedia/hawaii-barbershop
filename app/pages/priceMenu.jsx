@@ -15,11 +15,11 @@ const PriceMenu = () => {
      <div id="price-menu"
      className='global-container relative py-10 md:py-24 w-full text-black  m-auto'>
        <h2 className="text-center pb-10">HAWAII Barbershop Preise</h2>
-       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 md:gap-6">
+       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-3 md:gap-6">
         {services.map((service, index) => (
           <div
             key={index}
-            className="flex items-center justify-between text-lg font-medium py-2 "
+            className="flex items-center justify-between text-lg font-medium  "
           >
             <span className="font-bold">{service.name}</span>
             <span className="flex-grow h-px bg-dotted mx-2"></span>
