@@ -18,6 +18,7 @@ const Header = () => {
                 element.scrollIntoView({ behavior: 'smooth' });
             }
             setMobileMenu(false);
+            setMobileSubMenu('');
         };
 
         window.addEventListener('hashchange', handleHashChange);
