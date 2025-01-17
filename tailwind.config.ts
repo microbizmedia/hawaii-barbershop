@@ -16,8 +16,9 @@ export default {
         xl: '1280px',
         '2xl': '1536px',
       },
-      colors: { 
-          'priceColor': '#91765a',
+      colors: {
+        'priceColor': '#91765a',
+        'backgroundColor': "#f8f3ed",
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
