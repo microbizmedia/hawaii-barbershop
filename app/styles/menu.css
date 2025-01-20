@@ -39,7 +39,7 @@
   @media (max-width: 991px) {
     .mobile-menu-trigger {
       display: flex;
-      padding: 20px;
+      padding: 1.5rem;
       cursor: pointer;
       align-items: center;
       justify-content: center;

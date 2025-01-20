@@ -34,8 +34,8 @@ const Header = () => {
             className='absolute z-10   w-full h-[100px] flex items-center border-b border-white/50 overflow-hidden'
             id='menu'
         >
-            <div className="relative global-container flex justify-between items-center w-full ">
-                <Link href="/" ><p  id="logo" className="text-xl">HAWAII BARBER KEMPTEN</p></Link>
+            <div className="relative  flex justify-between items-center w-full ">
+                <Link href="/" ><p  id="logo" className="text-xl px-[1.5rem]">HAWAII BARBER KEMPTEN</p></Link>
                 <div
                     onClick={handleMenu}
                     className={`menu-overlay ${mobileMenu && 'active'}`}

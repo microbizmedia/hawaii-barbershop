@@ -13,7 +13,7 @@ const About = () => {
     return (
         <div
             id="about"
-            className='relative overflow-hidden global-container m-auto w-full text-black pb-32 md:pb-16 pt-10 lg:pt-36 flex items-center flex-wrap md:flex-nowrap flex-row gap-4 '
+            className='relative overflow-hidden global-container m-auto w-full text-black pb-10 md:pb-16 pt-10 lg:pt-36 flex items-center flex-wrap md:flex-nowrap flex-row gap-4 '
         >
             <div className=' flex flex-col justify-center '>
                 <h2>HAWAII Barbershop</h2>
@@ -27,13 +27,11 @@ const About = () => {
                     Vertrauen Sie uns - wir sind für Sie da, um ihnen den besten Service zu bieten!
 
                 </p>
-                {/* md:w-[160px] md:h-[240px] lg:w-[250px]  lg:h-[340px]
-            lg:w-[250px]  lg:h-[340px] md:w-[160px] md:h-[240px] */}
+           
             </div>
             <div className=" flex flex-row gap-6 justify-center m-auto">
-                <div className='relative top-[100px] md:top-[100px]  lg:top-[20px]
-             w-full h-auto object-cover  md:w-[160px] md:h-[240px] lg:w-[250px]  lg:h-[340px]
-               '
+                <div className='relative  md:top-[100px]  lg:top-[20px]
+             w-full h-auto object-cover  md:w-[160px] md:h-[240px] lg:w-[250px]  lg:h-[340px]'
                     data-aos="fade-up"
                 >
                     <img

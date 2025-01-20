@@ -2,7 +2,7 @@ const Instagram = () => {
   const instagramMessage = `Jetzt auf Instagram entdecken`
   return (
     <div id="instagram"
-      className='relative h-[50vh] w-full  bg-cover bg-[center_right_-120px] md:bg-center'
+      className='relative h-[50vh] bg-cover w-full bg-[center_right_-120px] md:bg-center flex justify-end items-end' 
       style={{ 
         // backgroundPosition: " -20px ", // Adjust offset
         backgroundImage: "url('./images/Hero_01.jpg')" 
@@ -11,7 +11,7 @@ const Instagram = () => {
 
 
       {/* <h2 className="relative z-20 pt-[20vh] global-container">{instagramMessage}</h2> */}
-      <h2 className="relative z-20 pt-[20vh] global-container">
+      <h2 className="relative z-20  global-container w-full pb-[1.5rem] md:pb-[10vh]">
         <span className="block sm:inline">Jetzt auf </span>{" "}
         <span className="block sm:inline">Instagram</span>
         
