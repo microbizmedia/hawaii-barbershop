@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -19,8 +21,11 @@ html {
 body {
   color: rgba(255, 255, 255, 0.9);
   background-color: #f8f3ed; /* Your desired background color */
-
-  font-family: Arial, Helvetica, sans-serif;
+  
+  /* font-family: Arial, Helvetica, sans-serif; */
+  /* font-family: "Lato", serif;
+  font-weight: 100;
+  font-style: normal; */
 }
 .global-container{
   margin-left: auto;
@@ -53,7 +58,6 @@ h2{
   }
 }
 p{
-  
   line-height: 1.8rem;
 }
 .bg-dotted {
@@ -64,6 +68,10 @@ p{
   border-bottom: 2px dotted #91765a;
   
 }
+
+
+
+
 
 
 

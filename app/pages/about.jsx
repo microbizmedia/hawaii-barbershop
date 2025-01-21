@@ -17,7 +17,7 @@ const About = () => {
         >
             <div className=' flex flex-col justify-center '>
                 <h2>HAWAII Barbershop</h2>
-                <p className="pt-3 md:pr-4 font-medium">Bei uns steht die Zufriedenheit unserer Kunden an erser Stele. Wir sind stolz
+                <p className="pt-3 md:pr-4">Bei uns steht die Zufriedenheit unserer Kunden an erser Stele. Wir sind stolz
                     darauf, einen hochwertigen Service anzubieten, der schnell und zuverlässig ist.
                     Unser Team legt großen Wert darauf, dass jedes Detail stimmt, dammit Sie sich Bei
                     uns rundum wohlfühlen können. Wir kümmern uns um Ihre Wünsche und setzen

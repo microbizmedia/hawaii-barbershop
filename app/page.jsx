@@ -1,6 +1,7 @@
 import Header from "./components/header";
 import Outlet from "./components/outlet";
 import Footer from "./components/footer";
+import ScrollToTop from "./components/scrollButton";
 
 // import ScrollToTop from "./components/scrollButton";
 export default function Home() {
@@ -20,7 +21,7 @@ export default function Home() {
       {/*...::: Footer Start :::... */}
       <Footer/>
       {/*...::: Footer End :::... */}
-      {/* <ScrollToTop /> */}
+      <ScrollToTop />
     </main>
     </>
   );
