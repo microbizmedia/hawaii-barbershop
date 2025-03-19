@@ -33,7 +33,9 @@ const ScrollToTop = () => {
                 <circle cx="18" cy="18" r="9" fill="none" className="stroke-current text-[#91765a] " strokeWidth="0.7" strokeDasharray="100" strokeDashoffset={calculatePercentage()} strokeLinecap="round"></circle>
             </svg>
             <div className="absolute  top-1/2 start-1/2 transform -translate-y-1/2 -translate-x-1/2">
-                <div onClick={scrollToTop} className='rotate-[-90deg] text-3xl text-[#91765a] p-6  cursor-pointer mr-[1px]'>&#10095; </div>
+                <p onClick={scrollToTop} className='rotate-[-90deg] text-3xl text-[#91765a] p-6 mr-1 cursor-pointer 
+              
+                 '>   &#10095;   </p>
             </div>
         </div>
     );

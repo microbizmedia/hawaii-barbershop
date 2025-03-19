@@ -1,6 +1,4 @@
-
 const Hero = () => {
-
     return (
         <div
             id="hero-image"
@@ -15,5 +13,4 @@ const Hero = () => {
         </div>
     );
 };
-
 export default Hero;
