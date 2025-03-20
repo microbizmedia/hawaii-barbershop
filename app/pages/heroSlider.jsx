@@ -3,15 +3,15 @@ import { useState } from "react";
 
 const slides = [
   {
-    image: "./images/barber-in-elegant-outfit-shaving-man-432KB.jpg",
+    image: "./assets/images/barber-in-elegant-outfit-shaving-man-432KB.jpg",
     message: "Ihr Haar in besten Händen",
   },
   {
-    image: "./images/photo-of-professional-hairdresser-433KB.jpg",
+    image: "./assets/images/photo-of-professional-hairdresser-433KB.jpg",
     message: "Styling für jeden Anlass",
   },
   {
-    image: "./images/barber-using-hairdryer-with-brush-434KB.jpg",
+    image: "./assets/images/barber-using-hairdryer-with-brush-434KB.jpg",
     message: "Ihren Termin noch heute",
   }
 ];
