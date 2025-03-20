@@ -16,6 +16,9 @@ const geistMono = Geist_Mono({
 export const metadata = {
   title: "Hawaii Barbershop",
   description: "Where Style Meets Aloha",
+  icons: {
+    icon: "/favicon.ico", // Path is relative to `public/`
+  },
 };
 
 export default function RootLayout({ children }) {

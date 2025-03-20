@@ -7,11 +7,11 @@ const slides = [
     message: "Ihr Haar in besten Händen",
   },
   {
-    image: "./images/interior-of-a-retro-style-barber.jpg",
+    image: "./images/photo-of-professional-hairdresser-433KB.jpg",
     message: "Styling für jeden Anlass",
   },
   {
-    image: "./images/photo-of-a-glass-of-whiskey.jpg",
+    image: "./images/barber-using-hairdryer-with-brush-434KB.jpg",
     message: "Ihren Termin noch heute",
   }
 ];
