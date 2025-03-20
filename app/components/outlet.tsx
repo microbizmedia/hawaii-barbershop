@@ -1,4 +1,4 @@
-import Hero from "../pages/hero";
+// import Hero from "../pages/hero";
 import HeroSlider from "../pages/heroSlider"
 import About from "../pages/about";
 import Instagram from "../pages/instagram";
