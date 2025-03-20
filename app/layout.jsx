@@ -5,7 +5,7 @@ import './styles/menu.css';
 import Head from 'next/head';
 const geistSans = Geist({
   variable: "--font-geist-sans",
-  subsets: ["latin"], 
+  subsets: ["latin"],
 });
 
 const geistMono = Geist_Mono({
@@ -24,15 +24,15 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-           <Head>
-           <link rel="icon" href="/favicon.ico" sizes="any" />
+      <Head>
+        <link rel="icon" href="/favicon.ico" sizes="any" />
       </Head>
-      
-            <body
-              className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-            >
-              {children}
-            </body>
-          </html>
-          );
+
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+      >
+        {children}
+      </body>
+    </html>
+  );
 }
