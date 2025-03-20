@@ -1,5 +1,5 @@
 // import Hero from "../pages/hero";
-import HeroSlider from "../pages/heroSlider"
+import Hero from "../pages/hero"
 import About from "../pages/about";
 import Instagram from "../pages/instagram";
 import PriceMenu from "../pages/priceMenu";
@@ -9,8 +9,7 @@ const Outlet = () => {
  
   return (
     <>
-        {/* <Hero /> */}
-        <HeroSlider />
+        <Hero />
         <About />
         <Instagram />
         <PriceMenu />
