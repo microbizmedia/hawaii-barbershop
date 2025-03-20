@@ -3,7 +3,7 @@ import { useState } from "react";
 
 const slides = [
   {
-    image: "./images/barber-in-elegant-outfit-shaving-man.jpg",
+    image: "./images/barber-in-elegant-outfit-shaving-man-432KB.jpg",
     message: "Ihr Haar in besten Händen",
   },
   {
