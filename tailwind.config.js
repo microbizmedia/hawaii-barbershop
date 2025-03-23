@@ -27,5 +27,9 @@ module.exports = {
       },
     },
   },
+  variants: {
+    rotate: ['active'],
+    bottom: ['active'],
+  },
   plugins: [],
 };
