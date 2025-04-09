@@ -1,7 +1,7 @@
 "use client"
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import BookingFormButton from "./booking-form"
+import BookingFormButton from "../../components/booking-form"
 const slides = [
   {
     image: "./assets/images/barber-in-elegant-outfit-shaving-man-432KB.jpg",
