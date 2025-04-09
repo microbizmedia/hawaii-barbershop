@@ -20,7 +20,6 @@ const slides = [
 ];
 
 const Hero = () => {
-  const [isModalOpen, setIsModalOpen] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
   
   const showPrevImage = () => {
@@ -81,10 +80,7 @@ const Hero = () => {
           <div className="relative inset-0 flex justify-center items-center">
             
             <BookingFormButton />
-            {/* <BookingForm
-        isOpen={isModalOpen}
-        onClose={() => setIsModalOpen(false)}
-      /> */}
+           
           </div>
           <AnimatePresence mode="wait">
             <motion.h1
