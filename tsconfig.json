@@ -6,6 +6,11 @@
       "dom.iterable",
       "esnext"
     ],
+    "baseUrl": ".",
+    "paths": {
+      "@/components/*": ["components/*"],
+      "@/lib/*": ["lib/*"]
+    },
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
@@ -24,13 +29,14 @@
       }
     ]
   },
-  "include": [
-    "**/*.ts",
-    "**/*.tsx",
-    "next-env.d.ts",
-    ".next/types/**/*.ts"
-, "app/layout.jsx", "app/page.jsx", "app/pages/directions.jsx", "app/pages/about.jsx", "app/pages/hero.jsx", "app/pages/reviews.jsx", "app/pages/priceMenu.jsx", "app/pages/instagram.jsx", "next.config.js"  ],
-  "exclude": [
+//   "include": [
+//     "**/*.ts",
+//     "**/*.tsx",
+//     "next-env.d.ts",
+//     ".next/types/**/*.ts"
+// , "app/layout.tsx", "app/page.tsx", "app/sections/directions.jsx", "app/sections/about.jsx", "app/sections/hero.tsx", "app/sections/reviews.jsx", "app/sections/priceMenu.jsx", "app/sections/instagram.jsx", "next.config.js"  ],
+"include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+"exclude": [
     "node_modules"
   ]
 }

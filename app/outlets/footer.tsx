@@ -1,15 +1,14 @@
 
+const services = [
+  { name: "Montag", price: "10:00 - 17:00" },
+  { name: "Dienstag", price: "9:00 - 18:30" },
+  { name: "Mittwoch", price: "9:00 - 18:30" },
+  { name: "Donnerstag", price: "9:00 - 18:30" },
+  { name: "Freitag", price: "9:00 - 19:00" },
+  { name: "Samstag", price: "9:00 - 19:00" },
+  { name: "Sonntag", price: "Ruhetag" },
+];
 const Footer = () => {
-  const services = [
-    { name: "Montag", price: "10:00 - 17:00" },
-    { name: "Dienstag", price: "9:00 - 18:30" },
-    { name: "Mittwoch", price: "9:00 - 18:30" },
-    { name: "Donnerstag", price: "9:00 - 18:30" },
-    { name: "Freitag", price: "9:00 - 19:00" },
-    { name: "Samstag", price: "9:00 - 19:00" },
-    { name: "Sonntag", price: "Ruhetag" },
-  ];
-
   return (
     <footer className="relative  m-auto w-full bg-[#000] overflow-hidden"
     id="footer">

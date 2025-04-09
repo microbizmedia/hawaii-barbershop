@@ -1,6 +1,7 @@
 "use client"
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import BookingFormButton from "./booking-form"
 const slides = [
   {
     image: "./assets/images/barber-in-elegant-outfit-shaving-man-432KB.jpg",
@@ -19,7 +20,9 @@ const slides = [
 ];
 
 const Hero = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
+  
   const showPrevImage = () => {
     setCurrentIndex(index => {
       if (index === 0) return slides.length - 1
@@ -76,9 +79,12 @@ const Hero = () => {
       <div className="global-container flex justify-center absolute inset-0 items-end  pb-[14vh] md:pt-[40vh]">
         <div className="text-white ">
           <div className="relative inset-0 flex justify-center items-center">
-            <button className="relative z-0 bg-[#91765a] text-white text-xl py-3 md:px-20 mb-4 md:mb-10 w-full md:w-auto  hover:bg-[#7a5e47] transition">
-              TERMIN BUCHEN
-            </button>
+            
+            <BookingFormButton />
+            {/* <BookingForm
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+      /> */}
           </div>
           <AnimatePresence mode="wait">
             <motion.h1

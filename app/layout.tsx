@@ -1,6 +1,6 @@
 
 import { Geist, Geist_Mono } from "next/font/google";
-import "./styles/globals.css";
+import "./styles/global.css";
 import './styles/menu.css';
 
 const geistSans = Geist({
@@ -18,7 +18,7 @@ export const metadata = {
   description: "Where Style Meets Aloha",
 };
 
-export default function RootLayout({ children }) {
+export default function RootLayout({ children,}: Readonly <{children: React.ReactNode;}>) {
   return (
     <html lang="en">
       <body
