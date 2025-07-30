@@ -1,8 +1,6 @@
 "use client"
 import { useRef, useState, useEffect } from "react";
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { ChevronLeft } from 'lucide-react';
-import { ChevronRight } from 'lucide-react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import { Navigation } from 'swiper/modules';
@@ -94,7 +92,7 @@ const Hero = () => {
                 </svg>
             </button>
             {/* Content */}
-            <div className="global-container flex justify-center absolute inset-0 items-end  pb-[14vh] md:pt-[40vh] z-20">
+            <div className="global-container flex justify-center absolute inset-0 items-end  pb-[14vh] md:pt-[40vh] z-20 pointer-events-none">
                 <div className="text-white ">
                     <div className="relative inset-0 flex justify-center items-center">
 
