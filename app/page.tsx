@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <>
     
-    <main>
+    <main className="overflow-hidden">
       
       {/*...::: Header Start :::... */}
       <Header />

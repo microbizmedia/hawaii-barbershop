@@ -31,7 +31,7 @@ const Header = () => {
 
     return (
         <header
-            className='absolute z-20   w-full h-[100px] flex items-center border-b border-white/50 overflow-hidden'
+            className='absolute z-50   w-full h-[100px] flex items-center border-b border-white/50 overflow-hidden'
             id='menu'
         >
             <div className="relative  flex justify-between items-center w-full global-container ">

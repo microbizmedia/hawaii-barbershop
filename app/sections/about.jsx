@@ -36,7 +36,7 @@ const About = () => {
                 >
                     <img
 
-                        src='./assets/images/Segment_01_1.1.jpg'
+                        src='./Segment_01_1.1.jpg'
                         alt="Barber cutting hair"
                     />
                 </div>
@@ -47,7 +47,7 @@ const About = () => {
                         data-aos="fade-up"
                           
                         data-aos-delay="200"
-                        src='./assets/images/Segment_01_1.2.jpg'
+                        src='./Segment_01_1.2.jpg'
                         alt="Barber cutting hair"
                     />
                 </div>

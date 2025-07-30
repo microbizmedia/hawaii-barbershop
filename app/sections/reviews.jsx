@@ -8,7 +8,7 @@ const Reviews = () => {
         >
             <div className=" flex  flex-col-reverse lg:flex-row justify-center lg:gap-14">
             <img className="  lg:mt-24 w-full md:max-w-[480px] m-auto lg:m-0 px-[1.5rem]"
-                src='./assets/images/Segment_05.png'
+                src='./Segment_05.png'
                 alt="google-reviews"
 
                 width={450}
@@ -16,7 +16,7 @@ const Reviews = () => {
             <video  autoPlay muted loop playsInline
                 className=' w-full md:max-w-[480px]  object-cover object-center  m-auto lg:m-0'
             >
-                <source src='./assets/images/Segment_5_1.2.mp4' type="video/mp4">
+                <source src='./Segment_5_1.2.mp4' type="video/mp4">
                 </source>
                 Your browser does not support the video tag.
             </video>
