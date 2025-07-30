@@ -20,7 +20,7 @@ export default function BookingFormButton() {
         data-cal-namespace="haircut"
         data-cal-link="johnny-the-barber/haircut"
         data-cal-config='{"layout":"month_view"}'
-        className="relative z-0 bg-[#91765a] text-white text-xl py-3 md:px-20 mb-4 md:mb-10 w-full md:w-auto  hover:bg-[#7a5e47] transition">
+        className=" pointer-events-auto relative z-0 bg-[#91765a] text-white text-xl py-3 sm:px-20  w-full md:w-auto  hover:bg-[#7a5e47] transition">
         {/* <Link href="/">TERMIN BUCHEN</Link> */}
         TERMIN BUCHEN
 

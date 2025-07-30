@@ -92,9 +92,10 @@ const Hero = () => {
                 </svg>
             </button>
             {/* Content */}
+             
             <div className="global-container flex justify-center absolute inset-0 items-end  pb-[14vh] md:pt-[40vh] z-20 pointer-events-none">
                 <div className="text-white ">
-                    <div className="relative inset-0 flex justify-center items-center">
+                   <div className="relative z-10 inset-0 flex justify-center items-center mb-4 sm:mb-10">
 
                         <BookingFormButton />
 
