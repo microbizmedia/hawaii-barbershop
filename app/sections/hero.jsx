@@ -74,8 +74,8 @@ const Hero = () => {
             {/* Left Arrow */}
             <button
                 ref={prevRef}
-                className=" absolute z-20  md:left-0 left-[-35px] top-1/2 transform -translate-y-1/2 text-white 
-                 px-20 w-16 h-16 text-5xl h-[10%] rotate-[180deg]  transition-transform duration-200  active:scale-y-90" >
+                className=" absolute z-20  md:left-[35px] left-0 top-1/2 transform -translate-y-1/2 text-white 
+                 px-6 w-16 h-16 text-5xl h-[10%] rotate-[180deg]  transition-transform duration-200  active:scale-y-90" >
                 <svg width="50" height="50" viewBox="0 0 100 100">
                     <polyline points="10,10 50,50 10,90"
                         stroke="#91765a" strokeWidth="6" fill="none" strokeLinecap="round" />
@@ -84,8 +84,8 @@ const Hero = () => {
             {/* Right Arrow */}
             <button
                 ref={nextRef}
-                className=" absolute z-20  md:right-0 right-[-35px] top-1/2 transform -translate-y-1/2 text-white
-       px-20 w-16 h-16 text-5xl h-[10%] transition-transform duration-200  active:scale-y-90 " >
+                className=" absolute z-20  md:right-[35px] right-0 top-1/2 transform -translate-y-1/2 text-white
+       px-6 w-16 h-16 text-5xl h-[10%] transition-transform duration-200  active:scale-y-90 " >
                 <svg width="50" height="50" viewBox="0 0 100 100">
                     <polyline points="10,10 50,50 10,90"
                         stroke="#91765a" strokeWidth="6" fill="none" strokeLinecap="round" />
