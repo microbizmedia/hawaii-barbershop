@@ -21,11 +21,6 @@ const ScrollToTop = () => {
     // Smooth scroll, then change URL after animation completes
     const scrollToTop = () => {
         window.scrollTo({ top: 0, behavior: "smooth" });
-
-        // Wait for the scroll to complete (~500ms) before changing URL
-        setTimeout(() => {
-            router.push("/");
-        }, 800);
     };
 
     // Calculate percentage for strokeDashoffset (44 - 100)
