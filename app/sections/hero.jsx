@@ -8,20 +8,32 @@ import Image from 'next/image';
 import { motion, AnimatePresence } from "framer-motion";
 import BookingFormButton from "../../components/booking-form"
 const slides = [
-    {
-        image: "./barber-in-elegant-outfit-shaving-man-432KB.jpg",
+     {
+        image: "./professional1.jpg",
         message: "Ihr Haar in besten Händen",
-    }
-    ,
-    {
-        image: "./professional-hairdresser-shaping-thick-beard.jpg",
-        message: "Styling für jeden Anlass",
-    }
-    ,
-    {
-        image: "./professional-barber-spraying.jpg",
-        message: "Ihren Termin noch heute",
-    }
+    },
+     {
+        image: "./professional2.jpg",
+        message: "Ihr Haar in besten Händen",
+    },
+     {
+        image: "./professional3.jpg",
+        message: "Ihr Haar in besten Händen",
+    },
+    // {
+    //     image: "./barber-in-elegant-outfit-shaving-man-432KB.jpg",
+    //     message: "Ihr Haar in besten Händen",
+    // }
+    // ,
+    // {
+    //     image: "./professional-hairdresser-shaping-thick-beard.jpg",
+    //     message: "Styling für jeden Anlass",
+    // }
+    // ,
+    // {
+    //     image: "./professional-barber-spraying.jpg",
+    //     message: "Ihren Termin noch heute",
+    // }
 ];
 
 const Hero = () => {
@@ -61,7 +73,7 @@ const Hero = () => {
                             <Image
                                 src={img.image}
                                 alt={`Slide ${index + 1}`}
-                                className="w-full object-cover h-screen"
+                                className="w-full object-cover h-screen "
                                 priority
                                 width={800}
                                 height={600}
@@ -94,12 +106,8 @@ const Hero = () => {
             {/* Content */}
              
             <div className="global-container flex justify-center absolute inset-0 items-end  pb-[14vh] md:pt-[40vh] z-20 pointer-events-none">
-                <div className="text-white ">
-                   <div className="relative z-10 inset-0 flex justify-center items-center mb-4 sm:mb-10">
-
-                        <BookingFormButton />
-
-                    </div>
+                <div className="text-white flex flex-col gap-y-3">
+                  
                     <AnimatePresence mode="wait">
                         <motion.h1
                             key={currentIndex} // Ensures animation runs when text changes
@@ -112,6 +120,11 @@ const Hero = () => {
                             {slides[currentIndex].message}
                         </motion.h1>
                     </AnimatePresence>
+                     <div className="relative z-10 inset-0 flex justify-center items-center">
+
+                        <BookingFormButton />
+
+                    </div>
 
                 </div>
             </div>
