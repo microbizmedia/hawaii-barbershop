@@ -1,10 +1,8 @@
 'use client';
 import { useState, useEffect } from "react";
-import { useRouter } from "next/navigation";
 
 const ScrollToTop = () => {
     const [scrollPercentage, setScrollPercentage] = useState(0);
-    const router = useRouter();
 
     useEffect(() => {
         const handleScroll = () => {
