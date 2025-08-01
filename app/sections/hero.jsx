@@ -7,40 +7,29 @@ import { Navigation } from 'swiper/modules';
 import Image from 'next/image';
 import { motion, AnimatePresence } from "framer-motion";
 import BookingFormButton from "../../components/booking-form"
+import FallbackImage from '../../components/fallbackImage';
 const slides = [
-     {
-        image: "./professional1.jpg",
+    {
+        image: "/barber-in-elegant-outfit-shaving-man-432KB.jpg",
         message: "Ihr Haar in besten Händen",
+    }
+    ,
+    {
+        image: "/barber-trimming.jpg",
+        message: "Styling für jeden Anlass",
     },
-     {
-        image: "./professional2.jpg",
-        message: "Ihr Haar in besten Händen",
-    },
-     {
-        image: "./professional3.jpg",
-        message: "Ihr Haar in besten Händen",
-    },
-    // {
-    //     image: "./barber-in-elegant-outfit-shaving-man-432KB.jpg",
-    //     message: "Ihr Haar in besten Händen",
-    // }
-    // ,
-    // {
-    //     image: "./professional-hairdresser-shaping-thick-beard.jpg",
-    //     message: "Styling für jeden Anlass",
-    // }
-    // ,
-    // {
-    //     image: "./professional-barber-spraying.jpg",
-    //     message: "Ihren Termin noch heute",
-    // }
+    {
+        image: "/ginger-brutal.jpg",
+        message: "Ihren Termin noch heute",
+
+    }
 ];
 
 const Hero = () => {
     const prevRef = useRef(null);
     const nextRef = useRef(null);
     const [navigation, setNavigation] = useState({});
-      const [currentIndex, setCurrentIndex] = useState(0);
+    const [currentIndex, setCurrentIndex] = useState(0);
 
     // Set navigation once refs are ready
     useEffect(() => {
@@ -54,6 +43,8 @@ const Hero = () => {
 
     return (
         <div className="relative">
+
+
             <Swiper modules={[Navigation]}
                 navigation={navigation}
                 onBeforeInit={(swiper) => {
@@ -64,21 +55,24 @@ const Hero = () => {
                 onSlideChange={(swiper) => {
                     setCurrentIndex(swiper.realIndex); // updates current index (loop-safe)
                 }}
-                className="h-auto md:h-full"
+                className="min-h-screen"
                 spaceBetween={0} slidesPerView={1} loop={true}
             >
                 {slides.map((img, index) => {
                     return (
                         <SwiperSlide key={index}>
-                            <Image
-                                src={img.image}
-                                alt={`Slide ${index + 1}`}
-                                className="w-full object-cover h-screen "
-                                priority
-                                width={800}
-                                height={600}
-                            />
+                                <FallbackImage
+                                    src={img.image}
+                                    alt={`Slide ${index + 1}`}
+                                    width={800}
+                                    height={600}
+                                    className="w-full object-cover h-screen"
+                                    wrapperClassName="h-screen"
+                                    loaderText="Loading image..."
+                                    priority
+                                />
                         </SwiperSlide>
+
                     );
                 })}
 
@@ -104,10 +98,10 @@ const Hero = () => {
                 </svg>
             </button>
             {/* Content */}
-             
+
             <div className="global-container flex justify-center absolute inset-0 items-end  pb-[14vh] md:pt-[40vh] z-20 pointer-events-none">
                 <div className="text-white flex flex-col gap-y-3">
-                  
+
                     <AnimatePresence mode="wait">
                         <motion.h1
                             key={currentIndex} // Ensures animation runs when text changes
@@ -120,7 +114,7 @@ const Hero = () => {
                             {slides[currentIndex].message}
                         </motion.h1>
                     </AnimatePresence>
-                     <div className="relative z-10 inset-0 flex justify-center items-center">
+                    <div className="relative z-10 inset-0 flex justify-center items-center">
 
                         <BookingFormButton />
 
