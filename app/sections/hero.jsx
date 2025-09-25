@@ -66,7 +66,7 @@ const Hero = () => {
                                     width={800}
                                     height={600}
                                     className="w-full object-cover h-screen"
-                                    priority={index === 0} 
+                                   priority={false}
                                 />
                         </SwiperSlide>
 
