@@ -1,4 +1,4 @@
-
+import Image from "next/image";
 const Reviews = () => {
 
     return (
@@ -7,10 +7,11 @@ const Reviews = () => {
             className=' relative overflow-hidden m-auto w-full '
         >
             <div className=" flex  flex-col-reverse lg:flex-row justify-center lg:gap-14">
-            <img className="  lg:mt-24 w-full md:max-w-[480px] m-auto lg:m-0 px-[1.5rem]"
-                src='./Segment_05.png'
+            <Image className="  lg:mt-24 w-full md:max-w-[480px] m-auto lg:m-0 px-[1.5rem]"
+                src='./Segment_05.jpg'
                 alt="google-reviews"
-
+                loading="lazy"
+                height={300}
                 width={450}
             />
             <video  autoPlay muted loop playsInline

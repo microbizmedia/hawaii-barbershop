@@ -7,7 +7,6 @@ import { Navigation } from 'swiper/modules';
 import Image from 'next/image';
 import { motion, AnimatePresence } from "framer-motion";
 import BookingFormButton from "../../components/booking-form"
-import FallbackImage from '../../components/fallbackImage';
 const slides = [
     {
         image: "./barber-in-elegant-outfit-shaving-man-432KB.jpg",
@@ -61,15 +60,13 @@ const Hero = () => {
                 {slides.map((img, index) => {
                     return (
                         <SwiperSlide key={index}>
-                                <FallbackImage
+                                <Image
                                     src={img.image}
                                     alt={`Slide ${index + 1}`}
                                     width={800}
                                     height={600}
                                     className="w-full object-cover h-screen"
-                                    wrapperClassName="h-screen"
-                                    loaderText="Loading image..."
-                                    priority
+                                    priority={index === 0} 
                                 />
                         </SwiperSlide>
 
