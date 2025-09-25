@@ -4,7 +4,7 @@ const Instagram = () => {
     <div id="instagram"
       className='relative h-[50vh] md:bg-center flex justify-end items-end'
        >
-        <Image src='/instagram-background.jpg' loading="lazy" alt='background image' fill
+        <Image src='./instagram-background.jpg' loading="lazy" alt='background image' fill
               className='
               absolute   w-full  h-full object-cover object-[-190px_center] md:object-center
               ' />
