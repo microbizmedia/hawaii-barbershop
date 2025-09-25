@@ -9,16 +9,16 @@ import { motion, AnimatePresence } from "framer-motion";
 import BookingFormButton from "../../components/booking-form"
 const slides = [
     {
-        image: "./barber-in-elegant-outfit-shaving-man-432KB.jpg",
+        image: "/barber-in-elegant-outfit-shaving-man-432KB.jpg",
         message: "Ihr Haar in besten Händen",
     }
     ,
     {
-        image: "./barber-trimming.jpg",
+        image: "/barber-trimming.jpg",
         message: "Styling für jeden Anlass",
     },
     {
-        image: "./ginger-brutal.jpg",
+        image: "/ginger-brutal.jpg",
         message: "Ihren Termin noch heute",
 
     }
@@ -66,7 +66,7 @@ const Hero = () => {
                                     width={800}
                                     height={600}
                                     className="w-full object-cover h-screen"
-                                   priority={false}
+                                    priority={index === 0} // only first slide is priority
                                 />
                         </SwiperSlide>
 
