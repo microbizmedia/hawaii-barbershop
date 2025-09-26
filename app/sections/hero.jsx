@@ -31,6 +31,13 @@ const Hero = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
 
     // Set navigation once refs are ready
+    const [hasMounted, setHasMounted] = useState(false);
+
+    useEffect(() => {
+        setHasMounted(true);
+    }, []);
+
+
     useEffect(() => {
         if (prevRef.current && nextRef.current) {
             setNavigation({
@@ -60,14 +67,14 @@ const Hero = () => {
                 {slides.map((img, index) => {
                     return (
                         <SwiperSlide key={index}>
-                                <Image
-                                    src={img.image}
-                                    alt={`Slide ${index + 1}`}
-                                    width={800}
-                                    height={600}
-                                    className="w-full object-cover h-screen"
-                                    priority={index === 0} // only first slide is priority
-                                />
+                            <Image
+                                src={img.image}
+                                alt={`Slide ${index + 1}`}
+                                width={800}
+                                height={600}
+                                className="w-full object-cover h-screen"
+                                priority={index === 0} // only first slide is priority
+                            />
                         </SwiperSlide>
 
                     );
@@ -102,7 +109,7 @@ const Hero = () => {
                     <AnimatePresence mode="wait">
                         <motion.h1
                             key={currentIndex} // Ensures animation runs when text changes
-                            initial={{ opacity: 0, y: 20 }} // Start slightly lower and transparent
+                            initial={hasMounted ? { opacity: 0, y: 20 } : false} // no animation on first load
                             animate={{ opacity: 1, y: 0 }} // Fade in and move up
                             exit={{ opacity: 0, y: -20 }} // Move up and fade out
                             transition={{ duration: 0.6, ease: "easeInOut" }} // Smooth transition
