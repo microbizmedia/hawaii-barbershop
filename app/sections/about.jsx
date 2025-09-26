@@ -2,6 +2,7 @@
 import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Image from 'next/image';
 
 const About = () => {
     useEffect(() => {
@@ -34,21 +35,25 @@ const About = () => {
              w-full h-auto object-cover  md:w-[160px] md:h-[240px] lg:w-[250px]  lg:h-[340px]'
                     data-aos="fade-up"
                 >
-                    <img
+                    <Image
 
                         src='./Segment_01_1.1.jpg'
                         alt="Barber cutting hair"
+                        loading='lazy'
+                        fill
                     />
                 </div>
                 <div className='relative top-[0] md:top-[0px] lg:top-[-80px]
              w-full h-auto object-cover md:w-[160px] md:h-[240px] lg:w-[250px]  lg:h-[340px]
                '>
-                    <img
+                    <Image
                         data-aos="fade-up"
                           
                         data-aos-delay="200"
                         src='./Segment_01_1.2.jpg'
                         alt="Barber cutting hair"
+                        loading='lazy'
+                        fill
                     />
                 </div>
             </div>
